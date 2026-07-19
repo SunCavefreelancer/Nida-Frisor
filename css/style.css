@@ -956,13 +956,10 @@ h6 {
   border: .03125rem solid rgba(150,131,131,.3);
   border-radius: .3125rem;
   box-shadow: 0 .25rem .375rem rgba(0,0,0,.04),0 .625rem 1.875rem rgba(0,0,0,.08);
-  transition: .8s;
   opacity: 0;
   -webkit-transform: translateY(1.875rem);
   transform: translateY(1.875rem);
-  transition: border .3s ease,background-color .3s ease,opacity .8s ease,-webkit-transform .8s ease;
-  transition: border .3s ease,background-color .3s ease,opacity .8s ease,transform .8s ease;
-  transition: border .3s ease,background-color .3s ease,opacity .8s ease,transform .8s ease,-webkit-transform .8s ease;
+  transition: all .3s;
   cursor: pointer
 }
 .spesialiteter__card:hover {
@@ -1462,11 +1459,11 @@ h6 {
   margin-top: auto
 }
 .testimonials__img img {
-  aspect-ratio: 250/250;
+  aspect-ratio: 70/70;
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
-  border: .1875rem solid var(--bg-accent)
+  border: .0625rem solid var(--bg-accent)
 }
 .testimonials__buttons {
   display: flex;
@@ -2134,10 +2131,10 @@ button.swiper-pagination-bullet {
     font-size: 1rem
   }
   .testimonials__img img {
-    width: 4.375rem
+    width: 1.875rem
   }
   .testimonials__img img {
-    height: 4.375rem
+    height: 1.875rem
   }
   .testimonials__btn-left {
     font-size: .9375rem
@@ -2639,10 +2636,10 @@ button.swiper-pagination-bullet {
     font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
   }
   .testimonials__img img {
-    width: clamp(4.375rem ,4.375rem + 0 ,4.375rem)
+    width: clamp(1.875rem ,1.0416666667rem + 4.1666666667vw ,4.375rem)
   }
   .testimonials__img img {
-    height: clamp(4.375rem ,4.375rem + 0 ,4.375rem)
+    height: clamp(1.875rem ,1.0416666667rem + 4.1666666667vw ,4.375rem)
   }
   .testimonials__btn-left {
     font-size: clamp(.9375rem ,.8333333333rem + .5208333333vw ,1.25rem)
