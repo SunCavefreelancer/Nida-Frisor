@@ -772,7 +772,7 @@ h6 {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 150px;
+  width: 9.375rem;
   z-index: 2;
   pointer-events: none
 }
@@ -2454,7 +2454,6 @@ button.swiper-pagination-bullet {
     grid-template-columns: repeat(1,1fr)
   }
   .instagram__text {
-    letter-spacing: none;
     padding: .75rem 3.125rem
   }
 }
