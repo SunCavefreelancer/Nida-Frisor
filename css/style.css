@@ -2,21 +2,21 @@
 @font-face {
   font-family: Garamond-400;
   src: url(../fonts/Garamond-400.woff2) format("woff2"),url(../fonts/Garamond-400.woff) format("woff");
-  wont-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-display: swap
 }
 @font-face {
   font-family: Cormorant-500;
   src: url(../fonts/Cormorant-500.woff2) format("woff2"),url(../fonts/Cormorant-500.woff) format("woff");
-  wont-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-display: swap
 }
 @font-face {
   font-family: Allura-400;
   src: url(../fonts/Allura-400.woff2) format("woff2"),url(../fonts/Allura-400.woff) format("woff");
-  wont-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-display: swap
 }
