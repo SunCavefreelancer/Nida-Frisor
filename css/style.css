@@ -509,7 +509,7 @@ h6 {
   font-weight: 600;
   line-height: 130%;
   color: #fff;
-  background: linear-gradient(#fff 0 0) bottom/var(--t,0) 2px no-repeat;
+  background: linear-gradient(#fff,#fff) bottom/var(--t,0) 2px no-repeat;
   transition: .5s
 }
 .header .menu__link:hover {
