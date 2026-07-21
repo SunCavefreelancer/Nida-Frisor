@@ -696,7 +696,6 @@ h6 {
 .hero {
   position: relative;
   overflow: hidden;
-  height: 100vh;
   width: 100%
 }
 .hero::before {
@@ -859,6 +858,7 @@ h6 {
   line-height: 130%
 }
 .omsalongen__title {
+  line-height: 130%;
   color: var(--bg-inverse);
   text-transform: uppercase;
   font-family: Cormorant-500
@@ -2034,7 +2034,7 @@ button.swiper-pagination-bullet {
     font-size: 1rem
   }
   .omsalongen__title {
-    font-size: 1.125rem
+    font-size: 1.25rem
   }
   .omsalongen__line {
     width: 6.25rem
@@ -2043,7 +2043,7 @@ button.swiper-pagination-bullet {
     font-size: 1.125rem
   }
   .omsalongen__decor {
-    font-size: 1.25rem
+    font-size: 1.5rem
   }
   .spesialiteter {
     padding-top: 1.5625rem
@@ -2541,7 +2541,7 @@ button.swiper-pagination-bullet {
     font-size: clamp(1rem ,.8333333333rem + .8333333333vw ,1.5rem)
   }
   .omsalongen__title {
-    font-size: clamp(1.125rem ,.75rem + 1.875vw ,2.25rem)
+    font-size: clamp(1.25rem ,.9166666667rem + 1.6666666667vw ,2.25rem)
   }
   .omsalongen__line {
     width: clamp(6.25rem ,5.1041666667rem + 5.7291666667vw ,9.6875rem)
@@ -2550,7 +2550,7 @@ button.swiper-pagination-bullet {
     font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
   }
   .omsalongen__decor {
-    font-size: clamp(1.25rem ,.9583333333rem + 1.4583333333vw ,2.125rem)
+    font-size: clamp(1.5rem ,1.2916666667rem + 1.0416666667vw ,2.125rem)
   }
   .spesialiteter {
     padding-top: clamp(1.5625rem ,.8333333333rem + 3.6458333333vw ,3.75rem)
