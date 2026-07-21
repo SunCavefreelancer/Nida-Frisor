@@ -554,14 +554,14 @@ h6 {
 }
 .menu-open .icon-menu::before {
   top: 50%;
-  -webkit-transform: rotate(-75deg);
-  transform: rotate(-75deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
   margin-top: -.0625rem
 }
 .menu-open .icon-menu::after {
   bottom: 50%;
-  -webkit-transform: rotate(75deg);
-  transform: rotate(75deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
   margin-bottom: -.0625rem
 }
 .footer {
@@ -752,7 +752,7 @@ h6 {
 }
 .hero__buttons {
   display: flex;
-  gap: .9375rem
+  gap: 1.25rem
 }
 .rullendetekstvisning {
   background-color: #080805;
@@ -1999,10 +1999,10 @@ button.swiper-pagination-bullet {
     margin-bottom: .9375rem
   }
   .hero {
-    padding-top: 7.1875rem
+    padding-top: 7.8125rem
   }
   .hero {
-    padding-bottom: 3.125rem
+    padding-bottom: 1.25rem
   }
   .hero__decor {
     font-size: 1.75rem
@@ -2507,10 +2507,10 @@ button.swiper-pagination-bullet {
     margin-bottom: clamp(.9375rem ,.8333333333rem + .5208333333vw ,1.25rem)
   }
   .hero {
-    padding-top: clamp(7.1875rem ,6.4583333333rem + 3.6458333333vw ,9.375rem)
+    padding-top: clamp(7.8125rem ,7.2916666667rem + 2.6041666667vw ,9.375rem)
   }
   .hero {
-    padding-bottom: clamp(3.125rem ,2.6041666667rem + 2.6041666667vw ,4.6875rem)
+    padding-bottom: clamp(1.25rem ,.1041666667rem + 5.7291666667vw ,4.6875rem)
   }
   .hero__decor {
     font-size: clamp(1.75rem ,.5625rem + 5.9375vw ,5.3125rem)
