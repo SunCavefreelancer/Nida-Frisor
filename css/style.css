@@ -2008,13 +2008,13 @@ button.swiper-pagination-bullet {
     font-size: 1.75rem
   }
   .hero__title {
-    font-size: 1.875rem
+    font-size: 2.5rem
   }
   .hero__line {
     width: 6.25rem
   }
   .hero__sub-title {
-    font-size: 1rem
+    font-size: 1.125rem
   }
   .rullendetekstvisning {
     padding-top: .3125rem
@@ -2414,7 +2414,7 @@ button.swiper-pagination-bullet {
 }
 @media (max-width:36.25em) {
   .hero__title {
-    max-width: 25rem
+    max-width: 26.25rem
   }
 }
 @media (max-width:35.99875rem) {
@@ -2424,8 +2424,8 @@ button.swiper-pagination-bullet {
 }
 @media (max-width:33.125em) {
   .hero::before {
-    -webkit-filter: blur(4px);
-    filter: blur(4px);
+    -webkit-filter: blur(.25rem);
+    filter: blur(.25rem);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     background-position: center
@@ -2516,13 +2516,13 @@ button.swiper-pagination-bullet {
     font-size: clamp(1.75rem ,.5625rem + 5.9375vw ,5.3125rem)
   }
   .hero__title {
-    font-size: clamp(1.875rem ,.8333333333rem + 5.2083333333vw ,5rem)
+    font-size: clamp(2.5rem ,1.6666666667rem + 4.1666666667vw ,5rem)
   }
   .hero__line {
     width: clamp(6.25rem ,5.1041666667rem + 5.7291666667vw ,9.6875rem)
   }
   .hero__sub-title {
-    font-size: clamp(1rem ,.8333333333rem + .8333333333vw ,1.5rem)
+    font-size: clamp(1.125rem ,1rem + .625vw ,1.5rem)
   }
   .rullendetekstvisning {
     padding-top: clamp(.3125rem ,.2083333333rem + .5208333333vw ,.625rem)
