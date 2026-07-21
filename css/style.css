@@ -554,14 +554,14 @@ h6 {
 }
 .menu-open .icon-menu::before {
   top: 50%;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-75deg);
+  transform: rotate(-75deg);
   margin-top: -.0625rem
 }
 .menu-open .icon-menu::after {
   bottom: 50%;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -webkit-transform: rotate(75deg);
+  transform: rotate(75deg);
   margin-bottom: -.0625rem
 }
 .footer {
@@ -699,7 +699,9 @@ h6 {
 }
 .hero {
   position: relative;
-  overflow: hidden
+  overflow: hidden;
+  height: 100vh;
+  width: 100%
 }
 .hero::before {
   content: "";
@@ -722,7 +724,7 @@ h6 {
 .hero__contant {
   display: flex;
   flex-direction: column;
-  gap: .625rem;
+  gap: 1.25rem;
   max-width: 40rem
 }
 .hero__decor {
@@ -753,6 +755,7 @@ h6 {
   gap: .9375rem
 }
 .rullendetekstvisning {
+  background-color: #080805;
   width: 100%
 }
 .rullendetekstvisning__body {
@@ -1778,7 +1781,7 @@ button.swiper-pagination-bullet {
     margin-bottom: 1.25rem
   }
   .hero {
-    padding-top: 8.75rem
+    padding-top: 9.375rem
   }
   .hero {
     padding-bottom: 4.6875rem
@@ -1794,6 +1797,12 @@ button.swiper-pagination-bullet {
   }
   .hero__sub-title {
     font-size: 1.5rem
+  }
+  .rullendetekstvisning {
+    padding-top: .625rem
+  }
+  .rullendetekstvisning {
+    padding-bottom: .625rem
   }
   .rullendetekstvisning__body {
     padding: 1.25rem
@@ -1990,10 +1999,10 @@ button.swiper-pagination-bullet {
     margin-bottom: .9375rem
   }
   .hero {
-    padding-top: 6.875rem
+    padding-top: 7.1875rem
   }
   .hero {
-    padding-bottom: 1.875rem
+    padding-bottom: 3.125rem
   }
   .hero__decor {
     font-size: 1.75rem
@@ -2006,6 +2015,12 @@ button.swiper-pagination-bullet {
   }
   .hero__sub-title {
     font-size: 1rem
+  }
+  .rullendetekstvisning {
+    padding-top: .3125rem
+  }
+  .rullendetekstvisning {
+    padding-bottom: .3125rem
   }
   .rullendetekstvisning__body {
     padding: .9375rem
@@ -2235,10 +2250,7 @@ button.swiper-pagination-bullet {
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    margin: 0!important;
-    padding: .625rem .625rem;
-    font-size: .625rem;
-    border-radius: .3125rem
+    margin: 0!important
   }
 }
 @media (max-width:50.625em) {
@@ -2495,10 +2507,10 @@ button.swiper-pagination-bullet {
     margin-bottom: clamp(.9375rem ,.8333333333rem + .5208333333vw ,1.25rem)
   }
   .hero {
-    padding-top: clamp(6.875rem ,6.25rem + 3.125vw ,8.75rem)
+    padding-top: clamp(7.1875rem ,6.4583333333rem + 3.6458333333vw ,9.375rem)
   }
   .hero {
-    padding-bottom: clamp(1.875rem ,.9375rem + 4.6875vw ,4.6875rem)
+    padding-bottom: clamp(3.125rem ,2.6041666667rem + 2.6041666667vw ,4.6875rem)
   }
   .hero__decor {
     font-size: clamp(1.75rem ,.5625rem + 5.9375vw ,5.3125rem)
@@ -2511,6 +2523,12 @@ button.swiper-pagination-bullet {
   }
   .hero__sub-title {
     font-size: clamp(1rem ,.8333333333rem + .8333333333vw ,1.5rem)
+  }
+  .rullendetekstvisning {
+    padding-top: clamp(.3125rem ,.2083333333rem + .5208333333vw ,.625rem)
+  }
+  .rullendetekstvisning {
+    padding-bottom: clamp(.3125rem ,.2083333333rem + .5208333333vw ,.625rem)
   }
   .rullendetekstvisning__body {
     padding: clamp(.9375rem ,.8333333333rem + .5208333333vw ,1.25rem)
@@ -2670,7 +2688,8 @@ button.swiper-pagination-bullet {
   .header .menu__body {
     margin-right: auto!important;
     margin-left: 1.25rem;
-    justify-content: flex-start
+    justify-content: flex-start;
+    text-align: center
   }
 }
 @media (any-hover:hover) {
