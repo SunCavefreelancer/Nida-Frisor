@@ -176,10 +176,6 @@
   content: ""
 }
 :root {
-  --primary: #ffffff;
-  --secondary: #080805;
-  --accent: #B68C55;
-  --inverse: ##241B19;
   --bg-primary: #080805;
   --bg-secondary: #F6F1EB;
   --bg-accent: #B68C55;
