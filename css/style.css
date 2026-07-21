@@ -1780,7 +1780,7 @@ button.swiper-pagination-bullet {
     padding-top: 9.375rem
   }
   .hero {
-    padding-bottom: 4.6875rem
+    padding-bottom: 5.3125rem
   }
   .hero__decor {
     font-size: 5.3125rem
@@ -1998,7 +1998,7 @@ button.swiper-pagination-bullet {
     padding-top: 7.8125rem
   }
   .hero {
-    padding-bottom: 1.25rem
+    padding-bottom: 3.4375rem
   }
   .hero__decor {
     font-size: 1.75rem
@@ -2043,7 +2043,7 @@ button.swiper-pagination-bullet {
     font-size: 1.125rem
   }
   .omsalongen__decor {
-    font-size: 1.5rem
+    font-size: 1.625rem
   }
   .spesialiteter {
     padding-top: 1.5625rem
@@ -2505,7 +2505,7 @@ button.swiper-pagination-bullet {
     padding-top: clamp(7.8125rem ,7.2916666667rem + 2.6041666667vw ,9.375rem)
   }
   .hero {
-    padding-bottom: clamp(1.25rem ,.1041666667rem + 5.7291666667vw ,4.6875rem)
+    padding-bottom: clamp(3.4375rem ,2.8125rem + 3.125vw ,5.3125rem)
   }
   .hero__decor {
     font-size: clamp(1.75rem ,.5625rem + 5.9375vw ,5.3125rem)
@@ -2550,7 +2550,7 @@ button.swiper-pagination-bullet {
     font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
   }
   .omsalongen__decor {
-    font-size: clamp(1.5rem ,1.2916666667rem + 1.0416666667vw ,2.125rem)
+    font-size: clamp(1.625rem ,1.4583333333rem + .8333333333vw ,2.125rem)
   }
   .spesialiteter {
     padding-top: clamp(1.5625rem ,.8333333333rem + 3.6458333333vw ,3.75rem)
