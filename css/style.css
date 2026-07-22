@@ -564,7 +564,7 @@ h6 {
   background-color: var(--text-primary)
 }
 .footer__logo img {
-  aspect-ratio: 50/50;
+  aspect-ratio: 80/62;
   -o-object-fit: cover;
   object-fit: cover
 }
@@ -600,7 +600,7 @@ h6 {
 }
 .footer__link {
   font-size: 1rem;
-  line-height: 125%;
+  line-height: 127%;
   transition: .5s
 }
 .footer__link:hover {
@@ -1762,7 +1762,7 @@ button.swiper-pagination-bullet {
     margin-bottom: 1.25rem
   }
   .footer__logo img {
-    width: 5rem
+    width: 5.625rem
   }
   .footer__brand-info {
     margin-bottom: 1.25rem
@@ -1980,7 +1980,7 @@ button.swiper-pagination-bullet {
     margin-bottom: .9375rem
   }
   .footer__logo img {
-    width: 3.4375rem
+    width: 4.0625rem
   }
   .footer__brand-info {
     margin-bottom: .9375rem
@@ -2487,7 +2487,7 @@ button.swiper-pagination-bullet {
     margin-bottom: clamp(.9375rem ,.8333333333rem + .5208333333vw ,1.25rem)
   }
   .footer__logo img {
-    width: clamp(3.4375rem ,2.9166666667rem + 2.6041666667vw ,5rem)
+    width: clamp(4.0625rem ,3.5416666667rem + 2.6041666667vw ,5.625rem)
   }
   .footer__brand-info {
     margin-bottom: clamp(.9375rem ,.8333333333rem + .5208333333vw ,1.25rem)
