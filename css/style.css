@@ -693,6 +693,62 @@ h6 {
 .icons-tiktok:hover {
   background-color: rgba(0,0,0,0)
 }
+.kontakt {
+  background-color: var(--bg-secondary)
+}
+.kontakt__title {
+  color: var(--text-accent);
+  font-weight: 600
+}
+.kontakt__cards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.25rem
+}
+.kontakt__card {
+  display: flex;
+  gap: .9375rem;
+  padding: .9375rem;
+  background-color: var(--bg-primary);
+  border-radius: .25rem;
+  color: var(--text-inverse);
+  line-height: 130%
+}
+.kontakt__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3125rem
+}
+.kontakt__adress,
+.kontakt__mail,
+.kontakt__phone {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.kontakt__oss {
+  color: var(--text-accent)
+}
+.kontakt__item {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: .9375rem
+}
+.kontakt__item-text {
+  color: var(--text-primary);
+  line-height: 133%;
+  max-width: 46.875rem
+}
+.kontakt__map img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 950/550;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: .0625rem solid var(--bg-accent);
+  border-radius: .3125rem
+}
 .hero {
   position: relative;
   overflow: hidden;
@@ -1768,12 +1824,48 @@ button.swiper-pagination-bullet {
     margin-bottom: 1.25rem
   }
   .footer__columns {
-    gap: 3.125rem
+    gap: .9375rem
   }
   .footer__heading {
     margin-bottom: 1.5625rem
   }
   .footer__info-icon {
+    margin-bottom: 1.25rem
+  }
+  .kontakt {
+    padding-top: 9.375rem
+  }
+  .kontakt {
+    padding-bottom: 3.75rem
+  }
+  .kontakt__title {
+    font-size: 2.5rem
+  }
+  .kontakt__title {
+    margin-bottom: 3.125rem
+  }
+  .kontakt__cards {
+    padding-bottom: 3.75rem
+  }
+  .kontakt__card {
+    font-size: 1.25rem
+  }
+  .kontakt__icon {
+    font-size: 1.25rem
+  }
+  .kontakt__oss {
+    font-size: 1.5rem
+  }
+  .kontakt__oss {
+    margin-bottom: 1.25rem
+  }
+  .kontakt__items {
+    margin-bottom: 1.875rem
+  }
+  .kontakt__item-text {
+    font-size: 1.25rem
+  }
+  .kontakt__item-text {
     margin-bottom: 1.25rem
   }
   .hero {
@@ -1994,6 +2086,42 @@ button.swiper-pagination-bullet {
   .footer__info-icon {
     margin-bottom: .9375rem
   }
+  .kontakt {
+    padding-top: 7.5rem
+  }
+  .kontakt {
+    padding-bottom: 2.5rem
+  }
+  .kontakt__title {
+    font-size: 1.5625rem
+  }
+  .kontakt__title {
+    margin-bottom: 2.5rem
+  }
+  .kontakt__cards {
+    padding-bottom: 2.5rem
+  }
+  .kontakt__card {
+    font-size: 1.125rem
+  }
+  .kontakt__icon {
+    font-size: 1.125rem
+  }
+  .kontakt__oss {
+    font-size: 1.25rem
+  }
+  .kontakt__oss {
+    margin-bottom: 1.125rem
+  }
+  .kontakt__items {
+    margin-bottom: 1.5625rem
+  }
+  .kontakt__item-text {
+    font-size: 1.125rem
+  }
+  .kontakt__item-text {
+    margin-bottom: .9375rem
+  }
   .hero {
     padding-top: 7.8125rem
   }
@@ -2201,6 +2329,9 @@ button.swiper-pagination-bullet {
   .header .menu__link {
     font-size: .875rem
   }
+  .kontakt__cards {
+    grid-template-columns: repeat(2,1fr)
+  }
   .omsalongen__contant {
     grid-template-columns: 1fr
   }
@@ -2402,6 +2533,11 @@ button.swiper-pagination-bullet {
     justify-content: center
   }
 }
+@media (max-width:47.93625em) {
+  .kontakt__cards {
+    grid-template-columns: repeat(1,1fr)
+  }
+}
 @media (max-width:38.75em) {
   .rullendetekstvisning__body::after,
   .rullendetekstvisning__body::before {
@@ -2493,12 +2629,48 @@ button.swiper-pagination-bullet {
     margin-bottom: clamp(.9375rem ,.8333333333rem + .5208333333vw ,1.25rem)
   }
   .footer__columns {
-    gap: clamp(1.5625rem ,1.0416666667rem + 2.6041666667vw ,3.125rem)
+    gap: clamp(.9375rem ,1.7708333333rem + -1.0416666667vw ,1.5625rem)
   }
   .footer__heading {
     margin-bottom: clamp(.9375rem ,.7291666667rem + 1.0416666667vw ,1.5625rem)
   }
   .footer__info-icon {
+    margin-bottom: clamp(.9375rem ,.8333333333rem + .5208333333vw ,1.25rem)
+  }
+  .kontakt {
+    padding-top: clamp(7.5rem ,6.875rem + 3.125vw ,9.375rem)
+  }
+  .kontakt {
+    padding-bottom: clamp(2.5rem ,2.0833333333rem + 2.0833333333vw ,3.75rem)
+  }
+  .kontakt__title {
+    font-size: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
+  }
+  .kontakt__title {
+    margin-bottom: clamp(2.5rem ,2.2916666667rem + 1.0416666667vw ,3.125rem)
+  }
+  .kontakt__cards {
+    padding-bottom: clamp(2.5rem ,2.0833333333rem + 2.0833333333vw ,3.75rem)
+  }
+  .kontakt__card {
+    font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
+  }
+  .kontakt__icon {
+    font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
+  }
+  .kontakt__oss {
+    font-size: clamp(1.25rem ,1.1666666667rem + .4166666667vw ,1.5rem)
+  }
+  .kontakt__oss {
+    margin-bottom: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
+  }
+  .kontakt__items {
+    margin-bottom: clamp(1.5625rem ,1.4583333333rem + .5208333333vw ,1.875rem)
+  }
+  .kontakt__item-text {
+    font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
+  }
+  .kontakt__item-text {
     margin-bottom: clamp(.9375rem ,.8333333333rem + .5208333333vw ,1.25rem)
   }
   .hero {
