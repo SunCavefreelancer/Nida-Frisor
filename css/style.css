@@ -724,45 +724,65 @@ h6 {
 .kontakt__phone {
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
+  transition: .5s
+}
+.kontakt__adress:hover,
+.kontakt__mail:hover,
+.kontakt__phone:hover {
+  color: var(--text-accent)
 }
 .kontakt__info {
   line-height: 135%
 }
 .kontakt__oss {
-  color: var(--text-accent)
+  color: var(--text-accent);
+  font-weight: 500
 }
 .kontakt__item {
   display: flex;
-  gap: 1.25rem;
-  margin-bottom: .9375rem;
-  -webkit-animation: pulse 1.5s ease-in-out infinite alternate;
-  animation: pulse 1.5s ease-in-out infinite alternate
-}
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1)
-  }
-  100% {
-    -webkit-transform: scale(1.01);
-    transform: scale(1.01)
-  }
-}
-@keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1)
-  }
-  100% {
-    -webkit-transform: scale(1.01);
-    transform: scale(1.01)
-  }
+  gap: 1.6875rem;
+  margin-bottom: .9375rem
 }
 .kontakt__item-text {
   color: var(--text-primary);
   line-height: 133%;
-  max-width: 46.875rem
+  max-width: 46.875rem;
+  display: flex;
+  gap: .625rem
+}
+.kontakt__item-text::before {
+  content: "";
+  flex: 0 0 .25rem;
+  width: .25rem;
+  background-color: var(--bg-accent);
+  border-radius: .125rem;
+  -webkit-transform: translateY(.3125rem);
+  transform: translateY(.3125rem);
+  -webkit-animation: pulse .5s ease-in-out infinite alternate;
+  animation: pulse .5s ease-in-out infinite alternate
+}
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0
+  }
+  50% {
+    opacity: 1
+  }
+  100% {
+    opacity: 1
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0
+  }
+  50% {
+    opacity: 1
+  }
+  100% {
+    opacity: 1
+  }
 }
 .kontakt__map img {
   width: 100%;
@@ -772,6 +792,21 @@ h6 {
   object-fit: cover;
   border: .0625rem solid var(--bg-accent);
   border-radius: .3125rem
+}
+.kontakt .icons-facebook,
+.kontakt .icons-instagram,
+.kontakt .icons-tiktok {
+  padding: 1.5625rem;
+  border: .0625rem solid var(--bg-accent);
+  font-size: 1.625rem;
+  background-color: var(--bg-primary);
+  border-radius: 8%;
+  transition: .5s
+}
+.kontakt .icons-facebook:hover,
+.kontakt .icons-instagram:hover,
+.kontakt .icons-tiktok:hover {
+  background-color: rgba(0,0,0,0)
 }
 .hero {
   position: relative;
@@ -1897,6 +1932,9 @@ button.swiper-pagination-bullet {
   .kontakt__item-text {
     margin-bottom: 1.25rem
   }
+  .kontakt__item-text::before {
+    height: 2.8125rem
+  }
   .hero {
     padding-top: 9.375rem
   }
@@ -2155,6 +2193,9 @@ button.swiper-pagination-bullet {
   }
   .kontakt__item-text {
     margin-bottom: .9375rem
+  }
+  .kontakt__item-text::before {
+    height: 3.75rem
   }
   .hero {
     padding-top: 7.8125rem
@@ -2711,6 +2752,9 @@ button.swiper-pagination-bullet {
   }
   .kontakt__item-text {
     margin-bottom: clamp(.9375rem ,.8333333333rem + .5208333333vw ,1.25rem)
+  }
+  .kontakt__item-text::before {
+    height: clamp(2.8125rem ,4.0625rem + -1.5625vw ,3.75rem)
   }
   .hero {
     padding-top: clamp(7.8125rem ,7.2916666667rem + 2.6041666667vw ,9.375rem)
