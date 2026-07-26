@@ -698,7 +698,7 @@ h6 {
 }
 .kontakt__title {
   color: var(--text-accent);
-  font-weight: 600
+  text-transform: capitalize
 }
 .kontakt__cards {
   display: grid;
@@ -807,6 +807,56 @@ h6 {
 .kontakt .icons-instagram:hover,
 .kontakt .icons-tiktok:hover {
   background-color: rgba(0,0,0,0)
+}
+.tjenester {
+  position: relative
+}
+.tjenester::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: url(../img/background_tjenester.webp) center center/cover no-repeat;
+  transition: -webkit-filter .3s ease,-webkit-transform .3s ease;
+  transition: filter .3s ease,transform .3s ease;
+  transition: filter .3s ease,transform .3s ease,-webkit-filter .3s ease,-webkit-transform .3s ease
+}
+.tjenester__block {
+  position: relative;
+  z-index: 2;
+  max-width: 34.375rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem
+}
+.tjenester__title {
+  color: var(--text-accent);
+  text-transform: capitalize;
+  font-family: Allura-400
+}
+.tjenester__sub-title {
+  text-transform: uppercase;
+  max-width: 25rem;
+  color: var(--bg-secondary);
+  font-family: Cormorant
+}
+.tjenester__line {
+  height: .3125rem;
+  background-color: var(--bg-accent);
+  border-radius: .3125rem;
+  border: .0625rem solid transparent;
+  transition: .5s
+}
+.tjenester__line:hover {
+  background-color: rgba(0,0,0,0);
+  border: .0625rem solid var(--text-accent)
+}
+.tjenester__description {
+  color: var(--bg-secondary);
+  line-height: 130%
 }
 .hero {
   position: relative;
@@ -1935,6 +1985,24 @@ button.swiper-pagination-bullet {
   .kontakt__item-text::before {
     height: 2.8125rem
   }
+  .tjenester {
+    padding-top: 9.375rem
+  }
+  .tjenester {
+    padding-bottom: 5.3125rem
+  }
+  .tjenester__title {
+    font-size: 2.8125rem
+  }
+  .tjenester__sub-title {
+    font-size: 3rem
+  }
+  .tjenester__line {
+    width: 9.6875rem
+  }
+  .tjenester__description {
+    font-size: 1.25rem
+  }
   .hero {
     padding-top: 9.375rem
   }
@@ -2197,6 +2265,24 @@ button.swiper-pagination-bullet {
   .kontakt__item-text::before {
     height: 3.75rem
   }
+  .tjenester {
+    padding-top: 7.8125rem
+  }
+  .tjenester {
+    padding-bottom: 3.4375rem
+  }
+  .tjenester__title {
+    font-size: 1.75rem
+  }
+  .tjenester__sub-title {
+    font-size: 2.1875rem
+  }
+  .tjenester__line {
+    width: 6.25rem
+  }
+  .tjenester__description {
+    font-size: 1.125rem
+  }
   .hero {
     padding-top: 7.8125rem
   }
@@ -2456,6 +2542,9 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width:50.625em) {
+  .tjenester__sub-title {
+    max-width: 31.25rem
+  }
   .hero__title {
     max-width: 31.25rem
   }
@@ -2569,6 +2658,12 @@ button.swiper-pagination-bullet {
     margin-top: -.0625rem;
     transition: all .3s
   }
+  .tjenester__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+  }
   .hero__container {
     display: flex;
     justify-content: center;
@@ -2620,6 +2715,9 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width:36.25em) {
+  .tjenester__sub-title {
+    max-width: 26.25rem
+  }
   .hero__title {
     max-width: 26.25rem
   }
@@ -2630,6 +2728,12 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width:33.125em) {
+  .tjenester__title {
+    text-shadow: .125rem .125rem .25rem rgba(0,0,0,.5)
+  }
+  .tjenester__description {
+    text-shadow: .125rem .125rem .25rem rgba(0,0,0,.5)
+  }
   .hero::before {
     -webkit-filter: blur(.25rem);
     filter: blur(.25rem);
@@ -2755,6 +2859,24 @@ button.swiper-pagination-bullet {
   }
   .kontakt__item-text::before {
     height: clamp(2.8125rem ,4.0625rem + -1.5625vw ,3.75rem)
+  }
+  .tjenester {
+    padding-top: clamp(7.8125rem ,7.2916666667rem + 2.6041666667vw ,9.375rem)
+  }
+  .tjenester {
+    padding-bottom: clamp(3.4375rem ,2.8125rem + 3.125vw ,5.3125rem)
+  }
+  .tjenester__title {
+    font-size: clamp(1.75rem ,1.3958333333rem + 1.7708333333vw ,2.8125rem)
+  }
+  .tjenester__sub-title {
+    font-size: clamp(2.1875rem ,1.9166666667rem + 1.3541666667vw ,3rem)
+  }
+  .tjenester__line {
+    width: clamp(6.25rem ,5.1041666667rem + 5.7291666667vw ,9.6875rem)
+  }
+  .tjenester__description {
+    font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
   }
   .hero {
     padding-top: clamp(7.8125rem ,7.2916666667rem + 2.6041666667vw ,9.375rem)
