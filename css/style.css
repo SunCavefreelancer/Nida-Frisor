@@ -1036,6 +1036,63 @@ h6 {
   position: absolute;
   z-index: 3
 }
+.blondspecialist {
+  position: relative;
+  z-index: 3
+}
+.blondspecialist::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url(../img/background_blond.webp) top left/cover no-repeat;
+  transition: -webkit-filter .3s ease,-webkit-transform .3s ease;
+  transition: filter .3s ease,transform .3s ease;
+  transition: filter .3s ease,transform .3s ease,-webkit-filter .3s ease,-webkit-transform .3s ease
+}
+.blondspecialist__contant {
+  display: flex;
+  flex-direction: column;
+  gap: .9375rem;
+  max-width: 37.5rem
+}
+.blondspecialist__title {
+  text-transform: uppercase;
+  color: var(--text-accent)
+}
+.blondspecialist__subtitle {
+  line-height: 130%;
+  color: var(--text-primary)
+}
+.blondspecialist__decor {
+  color: var(--text-accent);
+  font-family: Allura-400
+}
+.blondspecialist__line {
+  height: .3125rem;
+  background-color: var(--bg-accent);
+  border-radius: .3125rem;
+  border: .0625rem solid transparent;
+  transition: .5s
+}
+.blondspecialist__line:hover {
+  background-color: rgba(0,0,0,0);
+  border: .0625rem solid var(--text-accent)
+}
+.blondspecialist__drømmer {
+  line-height: 130%;
+  color: var(--text-primary)
+}
+.blondspecialist__enten {
+  line-height: 130%;
+  color: var(--text-primary)
+}
+.blondspecialist__button-gold {
+  text-transform: uppercase
+}
 .hero {
   position: relative;
   overflow: hidden;
@@ -2220,6 +2277,33 @@ button.swiper-pagination-bullet {
   .vifremhever__description {
     font-size: 1rem
   }
+  .blondspecialist {
+    padding-top: 9.375rem
+  }
+  .blondspecialist {
+    padding-bottom: 5.3125rem
+  }
+  .blondspecialist__title {
+    font-size: 1.5rem
+  }
+  .blondspecialist__title {
+    margin-bottom: 1.875rem
+  }
+  .blondspecialist__subtitle {
+    font-size: 1.375rem
+  }
+  .blondspecialist__decor {
+    font-size: 2.8125rem
+  }
+  .blondspecialist__line {
+    width: 19.0625rem
+  }
+  .blondspecialist__drømmer {
+    font-size: 1.25rem
+  }
+  .blondspecialist__enten {
+    font-size: 1.25rem
+  }
   .hero {
     padding-top: 9.375rem
   }
@@ -2542,6 +2626,33 @@ button.swiper-pagination-bullet {
     font-size: 1rem
   }
   .vifremhever__description {
+    font-size: 1.125rem
+  }
+  .blondspecialist {
+    padding-top: 7.8125rem
+  }
+  .blondspecialist {
+    padding-bottom: 3.4375rem
+  }
+  .blondspecialist__title {
+    font-size: 1.125rem
+  }
+  .blondspecialist__title {
+    margin-bottom: 1.25rem
+  }
+  .blondspecialist__subtitle {
+    font-size: 1.125rem
+  }
+  .blondspecialist__decor {
+    font-size: 1.875rem
+  }
+  .blondspecialist__line {
+    width: 12.8125rem
+  }
+  .blondspecialist__drømmer {
+    font-size: 1.125rem
+  }
+  .blondspecialist__enten {
     font-size: 1.125rem
   }
   .hero {
@@ -3011,6 +3122,12 @@ button.swiper-pagination-bullet {
   .tjenester__description {
     text-shadow: .125rem .125rem .25rem rgba(0,0,0,.5)
   }
+  .blondspecialist::before {
+    -webkit-filter: blur(.25rem);
+    filter: blur(.25rem);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
+  }
   .hero::before {
     -webkit-filter: blur(.25rem);
     filter: blur(.25rem);
@@ -3219,6 +3336,33 @@ button.swiper-pagination-bullet {
   }
   .vifremhever__description {
     font-size: clamp(1rem ,1.1666666667rem + -.2083333333vw ,1.125rem)
+  }
+  .blondspecialist {
+    padding-top: clamp(7.8125rem ,7.2916666667rem + 2.6041666667vw ,9.375rem)
+  }
+  .blondspecialist {
+    padding-bottom: clamp(3.4375rem ,2.8125rem + 3.125vw ,5.3125rem)
+  }
+  .blondspecialist__title {
+    font-size: clamp(1.125rem ,1rem + .625vw ,1.5rem)
+  }
+  .blondspecialist__title {
+    margin-bottom: clamp(1.25rem ,1.0416666667rem + 1.0416666667vw ,1.875rem)
+  }
+  .blondspecialist__subtitle {
+    font-size: clamp(1.125rem ,1.0416666667rem + .4166666667vw ,1.375rem)
+  }
+  .blondspecialist__decor {
+    font-size: clamp(1.875rem ,1.5625rem + 1.5625vw ,2.8125rem)
+  }
+  .blondspecialist__line {
+    width: clamp(12.8125rem ,10.7291666667rem + 10.4166666667vw ,19.0625rem)
+  }
+  .blondspecialist__drømmer {
+    font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
+  }
+  .blondspecialist__enten {
+    font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
   }
   .hero {
     padding-top: clamp(7.8125rem ,7.2916666667rem + 2.6041666667vw ,9.375rem)
