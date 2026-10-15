@@ -1114,6 +1114,87 @@ h6 {
   border: .0625rem solid var(--text-accent);
   border-radius: 50%
 }
+.specialist {
+  background-color: var(--bg-secondary)
+}
+.specialist__title {
+  color: var(--text-accent);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 1.25rem
+}
+.specialist__sub-title {
+  color: var(--text-primary);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 1.875rem
+}
+.specialist__line {
+  height: .1875rem;
+  border-radius: .125rem;
+  background-color: var(--bg-accent);
+  margin-bottom: 1.25rem;
+  margin: 0 auto 1.25rem auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.specialist__cards {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: .9375rem
+}
+.specialist__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: .625rem;
+  border: .0625rem solid var(--text-secondary);
+  border-radius: .4375rem;
+  box-shadow: 0 .25rem .75rem rgba(0,0,0,.05);
+  transition: .7s
+}
+.specialist__card:hover {
+  border: .0625rem solid var(--bg-accent)
+}
+.specialist__foto img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 185/270;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: .3125rem
+}
+.specialist__name {
+  color: var(--text-primary);
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 130%;
+  max-width: 25rem;
+  font-weight: 500;
+  margin: 0 auto
+}
+.specialist__text {
+  color: var(--text-primary);
+  text-align: center;
+  max-width: 21.875rem;
+  margin: 0 auto;
+  line-height: 130%;
+  flex-grow: 1
+}
+.specialist__icon {
+  padding: .625rem;
+  background-color: var(--bg-primary);
+  border: .0625rem solid var(--bg-accent);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center
+}
 .behandlingerfor {
   background-color: var(--bg-secondary)
 }
@@ -2409,6 +2490,30 @@ button.swiper-pagination-bullet {
   .blondspecialist__enten {
     font-size: 1.25rem
   }
+  .specialist {
+    padding-top: 2.8125rem
+  }
+  .specialist {
+    padding-bottom: 2.8125rem
+  }
+  .specialist__title {
+    font-size: 1.25rem
+  }
+  .specialist__sub-title {
+    font-size: 1.5rem
+  }
+  .specialist__line {
+    width: 21.875rem
+  }
+  .specialist__name {
+    font-size: 1.125rem
+  }
+  .specialist__text {
+    font-size: 1.125rem
+  }
+  .specialist__icon {
+    font-size: 1.25rem
+  }
   .behandlingerfor {
     padding-top: 2.8125rem
   }
@@ -2791,6 +2896,30 @@ button.swiper-pagination-bullet {
   .blondspecialist__enten {
     font-size: 1.125rem
   }
+  .specialist {
+    padding-top: 1.25rem
+  }
+  .specialist {
+    padding-bottom: 1.25rem
+  }
+  .specialist__title {
+    font-size: 1.125rem
+  }
+  .specialist__sub-title {
+    font-size: 1.25rem
+  }
+  .specialist__line {
+    width: 11.25rem
+  }
+  .specialist__name {
+    font-size: 1rem
+  }
+  .specialist__text {
+    font-size: 1rem
+  }
+  .specialist__icon {
+    font-size: 1.125rem
+  }
   .behandlingerfor {
     padding-top: 1.25rem
   }
@@ -3044,6 +3173,9 @@ button.swiper-pagination-bullet {
     top: 12%;
     right: 5%
   }
+  .specialist__cards {
+    grid-template-columns: repeat(2,1fr)
+  }
   .behandlingerfor__row {
     grid-template-columns: repeat(2,1fr)
   }
@@ -3153,6 +3285,9 @@ button.swiper-pagination-bullet {
   .header .menu__link {
     color: #fff;
     font-size: 1.75rem
+  }
+  .specialist__cards {
+    grid-template-columns: repeat(1,1fr)
   }
   .behandlingerfor__row {
     grid-template-columns: repeat(1,1fr)
@@ -3557,6 +3692,30 @@ button.swiper-pagination-bullet {
     font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
   }
   .blondspecialist__enten {
+    font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
+  }
+  .specialist {
+    padding-top: clamp(1.25rem ,.7291666667rem + 2.6041666667vw ,2.8125rem)
+  }
+  .specialist {
+    padding-bottom: clamp(1.25rem ,.7291666667rem + 2.6041666667vw ,2.8125rem)
+  }
+  .specialist__title {
+    font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
+  }
+  .specialist__sub-title {
+    font-size: clamp(1.25rem ,1.1666666667rem + .4166666667vw ,1.5rem)
+  }
+  .specialist__line {
+    width: clamp(11.25rem ,7.7083333333rem + 17.7083333333vw ,21.875rem)
+  }
+  .specialist__name {
+    font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
+  }
+  .specialist__text {
+    font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
+  }
+  .specialist__icon {
     font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
   }
   .behandlingerfor {
