@@ -1075,11 +1075,13 @@ h6 {
   font-family: Allura-400
 }
 .blondspecialist__line {
-  height: .3125rem;
+  height: .25rem;
   background-color: var(--bg-accent);
   border-radius: .3125rem;
   border: .0625rem solid transparent;
-  transition: .5s
+  transition: .5s;
+  -webkit-animation: animlone 2s ease-in-out infinite;
+  animation: animlone 2s ease-in-out infinite
 }
 .blondspecialist__line:hover {
   background-color: rgba(0,0,0,0);
@@ -1140,7 +1142,8 @@ h6 {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  position: relative
 }
 .specialist__cards {
   display: grid;
@@ -1158,7 +1161,9 @@ h6 {
   transition: .7s
 }
 .specialist__card:hover {
-  border: .0625rem solid var(--bg-accent)
+  border: .0625rem solid var(--bg-accent);
+  -webkit-transform: translateY(-.25rem);
+  transform: translateY(-.25rem)
 }
 .specialist__foto img {
   width: 100%;
@@ -1194,6 +1199,38 @@ h6 {
   justify-content: center;
   align-items: center;
   align-self: center
+}
+._icon-heart {
+  -webkit-animation: animicon 1.3s ease-in-out infinite;
+  animation: animicon 1.3s ease-in-out infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  color: var(--text-accent)
+}
+@-webkit-keyframes animicon {
+  0% {
+    opacity: 1
+  }
+  50% {
+    opacity: .2
+  }
+  100% {
+    opacity: 1
+  }
+}
+@keyframes animicon {
+  0% {
+    opacity: 1
+  }
+  50% {
+    opacity: .2
+  }
+  100% {
+    opacity: 1
+  }
 }
 .behandlingerfor {
   background-color: var(--bg-secondary)
@@ -1265,7 +1302,9 @@ h6 {
 .behandlingerfor__line {
   background-color: var(--bg-accent);
   height: .3125rem;
-  border-radius: .125rem
+  border-radius: .125rem;
+  -webkit-animation: animlone 2s ease-in-out infinite;
+  animation: animlone 2s ease-in-out infinite
 }
 .behandlingerfor__right {
   display: flex;
@@ -1278,6 +1317,28 @@ h6 {
 }
 .behandlingerfor__button-gold {
   align-self: flex-start
+}
+@-webkit-keyframes animlone {
+  0% {
+    opacity: 1
+  }
+  50% {
+    opacity: .2
+  }
+  100% {
+    opacity: 1
+  }
+}
+@keyframes animlone {
+  0% {
+    opacity: 1
+  }
+  50% {
+    opacity: .2
+  }
+  100% {
+    opacity: 1
+  }
 }
 .hero {
   position: relative;
@@ -2512,7 +2573,10 @@ button.swiper-pagination-bullet {
     font-size: 1.125rem
   }
   .specialist__icon {
-    font-size: 1.25rem
+    font-size: 1.375rem
+  }
+  ._icon-heart {
+    font-size: 1.375rem
   }
   .behandlingerfor {
     padding-top: 2.8125rem
@@ -2919,6 +2983,9 @@ button.swiper-pagination-bullet {
   }
   .specialist__icon {
     font-size: 1.125rem
+  }
+  ._icon-heart {
+    font-size: 1.25rem
   }
   .behandlingerfor {
     padding-top: 1.25rem
@@ -3716,7 +3783,10 @@ button.swiper-pagination-bullet {
     font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
   }
   .specialist__icon {
-    font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
+    font-size: clamp(1.125rem ,1.0416666667rem + .4166666667vw ,1.375rem)
+  }
+  ._icon-heart {
+    font-size: clamp(1.25rem ,1.2083333333rem + .2083333333vw ,1.375rem)
   }
   .behandlingerfor {
     padding-top: clamp(1.25rem ,.7291666667rem + 2.6041666667vw ,2.8125rem)
