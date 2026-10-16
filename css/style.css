@@ -561,9 +561,9 @@ h6 {
 }
 [class*=__span] {
   color: #b68c55;
-  text-align: center;
   font-family: Montserrat;
-  line-height: 135%
+  line-height: 135%;
+  font-weight: 500
 }
 ._header-scroll.header::before {
   content: "";
@@ -1201,6 +1201,7 @@ h6 {
   align-self: center
 }
 ._icon-heart {
+  font-size: 1rem;
   -webkit-animation: animicon 1.3s ease-in-out infinite;
   animation: animicon 1.3s ease-in-out infinite;
   position: absolute;
@@ -1339,6 +1340,107 @@ h6 {
   100% {
     opacity: 1
   }
+}
+.ommoss {
+  position: relative;
+  z-index: 3
+}
+.ommoss::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url(../img/background_om.webp) center center/cover no-repeat;
+  transition: -webkit-filter .3s ease,-webkit-transform .3s ease;
+  transition: filter .3s ease,transform .3s ease;
+  transition: filter .3s ease,transform .3s ease,-webkit-filter .3s ease,-webkit-transform .3s ease
+}
+.ommoss__up {
+  display: flex;
+  flex-direction: column;
+  gap: .625rem;
+  max-width: 40.625rem
+}
+.ommoss__name {
+  text-transform: uppercase;
+  color: var(--text-accent)
+}
+.ommoss__title {
+  line-height: 130%;
+  color: var(--text-primary)
+}
+.ommoss__decor {
+  color: var(--text-accent);
+  font-family: Allura-400
+}
+.ommoss__decorback {
+  color: var(--text-accent);
+  font-family: Allura-400
+}
+.omoss__line {
+  max-width: 21.875rem;
+  height: .25rem;
+  border-radius: .1875rem;
+  background-color: var(--text-accent);
+  margin: .1875rem
+}
+.omoss__star {
+  color: var(--text-accent);
+  position: absolute;
+  top: 0;
+  right: 50%
+}
+.omoss__text {
+  display: flex;
+  flex-direction: column;
+  gap: .9375rem;
+  line-height: 130%;
+  max-width: 36.25rem
+}
+.omoss__panel {
+  max-width: 46.875rem
+}
+.omoss__cards {
+  border: .0625rem solid var(--bg-accent);
+  background-color: var(--bg-inverse);
+  border-radius: .4375rem;
+  padding: .9375rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: .9375rem;
+  margin-bottom: 2.5rem
+}
+.omoss__card {
+  display: flex;
+  gap: .9375rem
+}
+.omoss__icon {
+  font-size: 1.25rem;
+  display: flex;
+  align-self: center;
+  border: .0625rem solid var(--bg-accent);
+  border-radius: 50%;
+  padding: .3125rem;
+  transition: .4s
+}
+.omoss__icon:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2)
+}
+.omoss__box {
+  display: grid;
+  grid-template-columns: repeat(3,1 fr);
+  gap: .3125rem;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: capitalize
+}
+.omoss__dexcription {
+  color: var(--text-inverse);
+  line-height: 130%
 }
 .hero {
   position: relative;
@@ -2575,9 +2677,6 @@ button.swiper-pagination-bullet {
   .specialist__icon {
     font-size: 1.375rem
   }
-  ._icon-heart {
-    font-size: 1.375rem
-  }
   .behandlingerfor {
     padding-top: 2.8125rem
   }
@@ -2607,6 +2706,48 @@ button.swiper-pagination-bullet {
   }
   .behandlingerfor__sub-title,
   .behandlingerfor__text-right {
+    font-size: 1.125rem
+  }
+  .ommoss {
+    padding-top: 9.375rem
+  }
+  .ommoss {
+    padding-bottom: 5.3125rem
+  }
+  .ommoss {
+    padding-bottom: 3.125rem
+  }
+  .ommoss__name {
+    font-size: 1.5rem
+  }
+  .ommoss__name {
+    margin-bottom: 1.875rem
+  }
+  .ommoss__title {
+    font-size: 1.625rem
+  }
+  .ommoss__decor {
+    font-size: 3.4375rem
+  }
+  .ommoss__decorback {
+    font-size: 2.8125rem
+  }
+  .omoss__line {
+    width: 21.875rem
+  }
+  .omoss__star {
+    font-size: 1.25rem
+  }
+  .omoss__text {
+    font-size: 1.25rem
+  }
+  .omoss__panel {
+    padding-top: 2.5rem
+  }
+  .omoss__panel {
+    padding-bottom: 2.5rem
+  }
+  .omoss__dexcription {
     font-size: 1.125rem
   }
   .hero {
@@ -2984,9 +3125,6 @@ button.swiper-pagination-bullet {
   .specialist__icon {
     font-size: 1.125rem
   }
-  ._icon-heart {
-    font-size: 1.25rem
-  }
   .behandlingerfor {
     padding-top: 1.25rem
   }
@@ -3016,6 +3154,48 @@ button.swiper-pagination-bullet {
   }
   .behandlingerfor__sub-title,
   .behandlingerfor__text-right {
+    font-size: 1rem
+  }
+  .ommoss {
+    padding-top: 7.8125rem
+  }
+  .ommoss {
+    padding-bottom: 3.4375rem
+  }
+  .ommoss {
+    padding-bottom: 1.875rem
+  }
+  .ommoss__name {
+    font-size: 1.125rem
+  }
+  .ommoss__name {
+    margin-bottom: 1.25rem
+  }
+  .ommoss__title {
+    font-size: 1.25rem
+  }
+  .ommoss__decor {
+    font-size: 2.5rem
+  }
+  .ommoss__decorback {
+    font-size: 1.875rem
+  }
+  .omoss__line {
+    width: 11.25rem
+  }
+  .omoss__star {
+    font-size: 1rem
+  }
+  .omoss__text {
+    font-size: 1.125rem
+  }
+  .omoss__panel {
+    padding-top: 1.875rem
+  }
+  .omoss__panel {
+    padding-bottom: 1.5625rem
+  }
+  .omoss__dexcription {
     font-size: 1rem
   }
   .hero {
@@ -3246,6 +3426,12 @@ button.swiper-pagination-bullet {
   .behandlingerfor__row {
     grid-template-columns: repeat(2,1fr)
   }
+  .ommoss::before {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    background-position: center;
+    background: url(../img/background_om.webp) top left/cover no-repeat
+  }
   .omsalongen__contant {
     grid-template-columns: 1fr
   }
@@ -3253,6 +3439,10 @@ button.swiper-pagination-bullet {
 @media (max-width:61.99875rem) {
   .footer__columns {
     grid-template-columns: repeat(3,1fr)
+  }
+  .omoss__icon:hover {
+    -webkit-transform: none;
+    transform: none
   }
   .card__foto img:hover {
     -webkit-transform: none;
@@ -3358,6 +3548,12 @@ button.swiper-pagination-bullet {
   }
   .behandlingerfor__row {
     grid-template-columns: repeat(1,1fr)
+  }
+  .omoss__card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center
   }
   .spesialiteter__cards {
     grid-template-columns: repeat(2,1fr)
@@ -3486,6 +3682,11 @@ button.swiper-pagination-bullet {
     max-width: 26.25rem
   }
 }
+@media (max-width:36.31125em) {
+  .omoss__cards {
+    grid-template-columns: repeat(2,1fr)
+  }
+}
 @media (max-width:35.99875rem) {
   .footer__columns {
     grid-template-columns: repeat(1,1fr)
@@ -3533,6 +3734,11 @@ button.swiper-pagination-bullet {
 @media (max-width:29.99875em) {
   .header {
     height: 5rem
+  }
+}
+@media (max-width:29.43625em) {
+  .omoss__cards {
+    grid-template-columns: repeat(1,1fr)
   }
 }
 @media (max-width:28.18625rem) {
@@ -3785,9 +3991,6 @@ button.swiper-pagination-bullet {
   .specialist__icon {
     font-size: clamp(1.125rem ,1.0416666667rem + .4166666667vw ,1.375rem)
   }
-  ._icon-heart {
-    font-size: clamp(1.25rem ,1.2083333333rem + .2083333333vw ,1.375rem)
-  }
   .behandlingerfor {
     padding-top: clamp(1.25rem ,.7291666667rem + 2.6041666667vw ,2.8125rem)
   }
@@ -3817,6 +4020,48 @@ button.swiper-pagination-bullet {
   }
   .behandlingerfor__sub-title,
   .behandlingerfor__text-right {
+    font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
+  }
+  .ommoss {
+    padding-top: clamp(7.8125rem ,7.2916666667rem + 2.6041666667vw ,9.375rem)
+  }
+  .ommoss {
+    padding-bottom: clamp(3.4375rem ,2.8125rem + 3.125vw ,5.3125rem)
+  }
+  .ommoss {
+    padding-bottom: clamp(1.875rem ,1.4583333333rem + 2.0833333333vw ,3.125rem)
+  }
+  .ommoss__name {
+    font-size: clamp(1.125rem ,1rem + .625vw ,1.5rem)
+  }
+  .ommoss__name {
+    margin-bottom: clamp(1.25rem ,1.0416666667rem + 1.0416666667vw ,1.875rem)
+  }
+  .ommoss__title {
+    font-size: clamp(1.25rem ,1.125rem + .625vw ,1.625rem)
+  }
+  .ommoss__decor {
+    font-size: clamp(2.5rem ,2.1875rem + 1.5625vw ,3.4375rem)
+  }
+  .ommoss__decorback {
+    font-size: clamp(1.875rem ,1.5625rem + 1.5625vw ,2.8125rem)
+  }
+  .omoss__line {
+    width: clamp(11.25rem ,7.7083333333rem + 17.7083333333vw ,21.875rem)
+  }
+  .omoss__star {
+    font-size: clamp(1rem ,.9166666667rem + .4166666667vw ,1.25rem)
+  }
+  .omoss__text {
+    font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
+  }
+  .omoss__panel {
+    padding-top: clamp(1.875rem ,1.6666666667rem + 1.0416666667vw ,2.5rem)
+  }
+  .omoss__panel {
+    padding-bottom: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
+  }
+  .omoss__dexcription {
     font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
   }
   .hero {
