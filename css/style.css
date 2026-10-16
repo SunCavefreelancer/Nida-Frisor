@@ -1442,49 +1442,6 @@ h6 {
   color: var(--text-inverse);
   line-height: 130%
 }
-.team {
-  background-color: var(--text-inverse)
-}
-.team__cards {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: .9375rem
-}
-.team__card {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem
-}
-.team__title {
-  color: var(--text-primary);
-  line-height: 130%;
-  font-weight: 500;
-  text-align: center;
-  margin: 0 auto
-}
-.team__text {
-  line-height: 135%;
-  text-align: center
-}
-.team__tex.webp img {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 670/250;
-  -o-object-fit: cover;
-  object-fit: cover
-}
-.team__img img {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 350/280;
-  -o-object-fit: cover;
-  object-fit: cover
-}
-.team__box {
-  line-height: 135%;
-  text-align: center;
-  width: 100%
-}
 .hero {
   position: relative;
   overflow: hidden;
@@ -2793,21 +2750,6 @@ button.swiper-pagination-bullet {
   .omoss__dexcription {
     font-size: 1.125rem
   }
-  .team {
-    padding-top: 2.5rem
-  }
-  .team {
-    padding-bottom: 2.5rem
-  }
-  .team__title {
-    font-size: 1.875rem
-  }
-  .team__text {
-    font-size: 1.125rem
-  }
-  .team__box {
-    font-size: 1.125rem
-  }
   .hero {
     padding-top: 9.375rem
   }
@@ -3256,21 +3198,6 @@ button.swiper-pagination-bullet {
   .omoss__dexcription {
     font-size: 1rem
   }
-  .team {
-    padding-top: 1.5625rem
-  }
-  .team {
-    padding-bottom: 1.5625rem
-  }
-  .team__title {
-    font-size: 1.5rem
-  }
-  .team__text {
-    font-size: 1rem
-  }
-  .team__box {
-    font-size: 1rem
-  }
   .hero {
     padding-top: 7.8125rem
   }
@@ -3626,9 +3553,6 @@ button.swiper-pagination-bullet {
     justify-content: center;
     align-items: center;
     text-align: center
-  }
-  .team__cards {
-    grid-template-columns: repeat(1,1fr)
   }
   .spesialiteter__cards {
     grid-template-columns: repeat(2,1fr)
@@ -4140,21 +4064,6 @@ button.swiper-pagination-bullet {
     padding-bottom: clamp(.9375rem ,.8333333333rem + .5208333333vw ,1.25rem)
   }
   .omoss__dexcription {
-    font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
-  }
-  .team {
-    padding-top: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
-  }
-  .team {
-    padding-bottom: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
-  }
-  .team__title {
-    font-size: clamp(1.5rem ,1.375rem + .625vw ,1.875rem)
-  }
-  .team__text {
-    font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
-  }
-  .team__box {
     font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
   }
   .hero {
