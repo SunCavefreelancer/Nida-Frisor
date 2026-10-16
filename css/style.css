@@ -1447,7 +1447,7 @@ h6 {
 }
 .team__cards {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(2,1fr);
   gap: .9375rem
 }
 .team__card {
@@ -1484,40 +1484,6 @@ h6 {
   line-height: 135%;
   text-align: center;
   width: 100%
-}
-.team__items {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: .9375rem
-}
-.team__item {
-  display: flex;
-  flex-direction: column;
-  gap: .9375rem;
-  padding: .625rem 1.25rem;
-  text-align: center;
-  position: relative
-}
-.team__item::before {
-  content: "";
-  position: absolute;
-  height: 4.375rem;
-  width: .1875rem;
-  right: -10px;
-  top: 10%;
-  background-color: var(--bg-accent);
-  border-radius: .3125rem;
-  box-shadow: 0 .125rem .3125rem rgba(0,0,0,.05)
-}
-.team__item:last-child::before {
-  display: none
-}
-.team__icon {
-  margin: 0 auto;
-  color: var(--text-accent)
-}
-.team__name {
-  line-height: 135%
 }
 .hero {
   position: relative;
@@ -2789,7 +2755,7 @@ button.swiper-pagination-bullet {
     padding-top: 9.375rem
   }
   .omoss {
-    padding-bottom: 5.3125rem
+    padding-bottom: 2.1875rem
   }
   .omoss {
     padding-bottom: 3.125rem
@@ -2822,7 +2788,7 @@ button.swiper-pagination-bullet {
     padding-top: 2.5rem
   }
   .omoss__panel {
-    padding-bottom: 2.5rem
+    padding-bottom: 1.25rem
   }
   .omoss__dexcription {
     font-size: 1.125rem
@@ -2840,12 +2806,6 @@ button.swiper-pagination-bullet {
     font-size: 1.125rem
   }
   .team__box {
-    font-size: 1.125rem
-  }
-  .team__icon {
-    font-size: 1.25rem
-  }
-  .team__name {
     font-size: 1.125rem
   }
   .hero {
@@ -3258,7 +3218,7 @@ button.swiper-pagination-bullet {
     padding-top: 7.8125rem
   }
   .omoss {
-    padding-bottom: 3.4375rem
+    padding-bottom: 1.25rem
   }
   .omoss {
     padding-bottom: 1.875rem
@@ -3291,7 +3251,7 @@ button.swiper-pagination-bullet {
     padding-top: 1.875rem
   }
   .omoss__panel {
-    padding-bottom: 1.5625rem
+    padding-bottom: .9375rem
   }
   .omoss__dexcription {
     font-size: 1rem
@@ -3309,12 +3269,6 @@ button.swiper-pagination-bullet {
     font-size: 1rem
   }
   .team__box {
-    font-size: 1rem
-  }
-  .team__icon {
-    font-size: 1.125rem
-  }
-  .team__name {
     font-size: 1rem
   }
   .hero {
@@ -3498,9 +3452,6 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width:74.99875em) {
-  .team__cards {
-    grid-template-columns: repeat(2,1fr)
-  }
   .spesialiteter__cards {
     grid-template-columns: repeat(3,1fr)
   }
@@ -3553,22 +3504,6 @@ button.swiper-pagination-bullet {
     transform: scale(1.05);
     background: url(../img/background_om.webp) top left/cover no-repeat
   }
-  .team__items {
-    grid-column: 1/-1;
-    grid-template-columns: repeat(4,1fr);
-    justify-content: center
-  }
-  .team__item {
-    display: flex
-  }
-  .team__item::before {
-    display: none
-  }
-  .team__item:nth-child(1)::before,
-  .team__item:nth-child(2)::before,
-  .team__item:nth-child(3)::before {
-    display: block
-  }
   .omsalongen__contant {
     grid-template-columns: 1fr
   }
@@ -3609,15 +3544,6 @@ button.swiper-pagination-bullet {
 @media (max-width:59.43625em) {
   .vifremhever__block {
     grid-template-columns: repeat(1,1fr)
-  }
-}
-@media (max-width:58.62375em) {
-  .team__cards {
-    grid-template-columns: repeat(1,1fr)
-  }
-  .team__cards>* {
-    grid-column: 1/-1!important;
-    grid-row: auto!important
   }
 }
 @media (max-width:52.81125em) {
@@ -3700,6 +3626,9 @@ button.swiper-pagination-bullet {
     justify-content: center;
     align-items: center;
     text-align: center
+  }
+  .team__cards {
+    grid-template-columns: repeat(1,1fr)
   }
   .spesialiteter__cards {
     grid-template-columns: repeat(2,1fr)
@@ -3844,20 +3773,6 @@ button.swiper-pagination-bullet {
 @media (max-width:34.74875em) {
   .tabs__navigation {
     grid-template-columns: repeat(2,1fr)
-  }
-}
-@media (max-width:34.37375em) {
-  .team__items {
-    grid-template-columns: repeat(2,1fr);
-    text-align: center
-  }
-}
-@media (max-width:34.37375rem) {
-  .team__item {
-    border-bottom: none
-  }
-  .team__item::before {
-    display: none!important
   }
 }
 @media (max-width:33.125em) {
@@ -4189,7 +4104,7 @@ button.swiper-pagination-bullet {
     padding-top: clamp(7.8125rem ,7.2916666667rem + 2.6041666667vw ,9.375rem)
   }
   .omoss {
-    padding-bottom: clamp(3.4375rem ,2.8125rem + 3.125vw ,5.3125rem)
+    padding-bottom: clamp(1.25rem ,.9375rem + 1.5625vw ,2.1875rem)
   }
   .omoss {
     padding-bottom: clamp(1.875rem ,1.4583333333rem + 2.0833333333vw ,3.125rem)
@@ -4222,7 +4137,7 @@ button.swiper-pagination-bullet {
     padding-top: clamp(1.875rem ,1.6666666667rem + 1.0416666667vw ,2.5rem)
   }
   .omoss__panel {
-    padding-bottom: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
+    padding-bottom: clamp(.9375rem ,.8333333333rem + .5208333333vw ,1.25rem)
   }
   .omoss__dexcription {
     font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
@@ -4240,12 +4155,6 @@ button.swiper-pagination-bullet {
     font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
   }
   .team__box {
-    font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
-  }
-  .team__icon {
-    font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
-  }
-  .team__name {
     font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
   }
   .hero {
