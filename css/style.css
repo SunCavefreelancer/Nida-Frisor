@@ -1341,11 +1341,11 @@ h6 {
     opacity: 1
   }
 }
-.ommoss {
+.omoss {
   position: relative;
-  z-index: 3
+  z-index: -1
 }
-.ommoss::before {
+.omoss::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1358,25 +1358,25 @@ h6 {
   transition: filter .3s ease,transform .3s ease;
   transition: filter .3s ease,transform .3s ease,-webkit-filter .3s ease,-webkit-transform .3s ease
 }
-.ommoss__up {
+.omoss__up {
   display: flex;
   flex-direction: column;
   gap: .625rem;
   max-width: 40.625rem
 }
-.ommoss__name {
+.omoss__name {
   text-transform: uppercase;
   color: var(--text-accent)
 }
-.ommoss__title {
+.omoss__title {
   line-height: 130%;
   color: var(--text-primary)
 }
-.ommoss__decor {
+.omoss__decor {
   color: var(--text-accent);
   font-family: Allura-400
 }
-.ommoss__decorback {
+.omoss__decorback {
   color: var(--text-accent);
   font-family: Allura-400
 }
@@ -1441,6 +1441,83 @@ h6 {
 .omoss__dexcription {
   color: var(--text-inverse);
   line-height: 130%
+}
+.team {
+  background-color: var(--text-inverse)
+}
+.team__cards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: .9375rem
+}
+.team__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem
+}
+.team__title {
+  color: var(--text-primary);
+  line-height: 130%;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto
+}
+.team__text {
+  line-height: 135%;
+  text-align: center
+}
+.team__tex.webp img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 670/250;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+.team__img img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 350/280;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+.team__box {
+  line-height: 135%;
+  text-align: center;
+  width: 100%
+}
+.team__items {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: .9375rem
+}
+.team__item {
+  display: flex;
+  flex-direction: column;
+  gap: .9375rem;
+  padding: .625rem 1.25rem;
+  text-align: center;
+  position: relative
+}
+.team__item::before {
+  content: "";
+  position: absolute;
+  height: 4.375rem;
+  width: .1875rem;
+  right: -10px;
+  top: 10%;
+  background-color: var(--bg-accent);
+  border-radius: .3125rem;
+  box-shadow: 0 .125rem .3125rem rgba(0,0,0,.05)
+}
+.team__item:last-child::before {
+  display: none
+}
+.team__icon {
+  margin: 0 auto;
+  color: var(--text-accent)
+}
+.team__name {
+  line-height: 135%
 }
 .hero {
   position: relative;
@@ -2708,28 +2785,28 @@ button.swiper-pagination-bullet {
   .behandlingerfor__text-right {
     font-size: 1.125rem
   }
-  .ommoss {
+  .omoss {
     padding-top: 9.375rem
   }
-  .ommoss {
+  .omoss {
     padding-bottom: 5.3125rem
   }
-  .ommoss {
+  .omoss {
     padding-bottom: 3.125rem
   }
-  .ommoss__name {
+  .omoss__name {
     font-size: 1.5rem
   }
-  .ommoss__name {
+  .omoss__name {
     margin-bottom: 1.875rem
   }
-  .ommoss__title {
+  .omoss__title {
     font-size: 1.625rem
   }
-  .ommoss__decor {
+  .omoss__decor {
     font-size: 3.4375rem
   }
-  .ommoss__decorback {
+  .omoss__decorback {
     font-size: 2.8125rem
   }
   .omoss__line {
@@ -2748,6 +2825,27 @@ button.swiper-pagination-bullet {
     padding-bottom: 2.5rem
   }
   .omoss__dexcription {
+    font-size: 1.125rem
+  }
+  .team {
+    padding-top: 2.5rem
+  }
+  .team {
+    padding-bottom: 2.5rem
+  }
+  .team__title {
+    font-size: 1.875rem
+  }
+  .team__text {
+    font-size: 1.125rem
+  }
+  .team__box {
+    font-size: 1.125rem
+  }
+  .team__icon {
+    font-size: 1.25rem
+  }
+  .team__name {
     font-size: 1.125rem
   }
   .hero {
@@ -3156,28 +3254,28 @@ button.swiper-pagination-bullet {
   .behandlingerfor__text-right {
     font-size: 1rem
   }
-  .ommoss {
+  .omoss {
     padding-top: 7.8125rem
   }
-  .ommoss {
+  .omoss {
     padding-bottom: 3.4375rem
   }
-  .ommoss {
+  .omoss {
     padding-bottom: 1.875rem
   }
-  .ommoss__name {
+  .omoss__name {
     font-size: 1.125rem
   }
-  .ommoss__name {
+  .omoss__name {
     margin-bottom: 1.25rem
   }
-  .ommoss__title {
+  .omoss__title {
     font-size: 1.25rem
   }
-  .ommoss__decor {
+  .omoss__decor {
     font-size: 2.5rem
   }
-  .ommoss__decorback {
+  .omoss__decorback {
     font-size: 1.875rem
   }
   .omoss__line {
@@ -3196,6 +3294,27 @@ button.swiper-pagination-bullet {
     padding-bottom: 1.5625rem
   }
   .omoss__dexcription {
+    font-size: 1rem
+  }
+  .team {
+    padding-top: 1.5625rem
+  }
+  .team {
+    padding-bottom: 1.5625rem
+  }
+  .team__title {
+    font-size: 1.5rem
+  }
+  .team__text {
+    font-size: 1rem
+  }
+  .team__box {
+    font-size: 1rem
+  }
+  .team__icon {
+    font-size: 1.125rem
+  }
+  .team__name {
     font-size: 1rem
   }
   .hero {
@@ -3379,6 +3498,9 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width:74.99875em) {
+  .team__cards {
+    grid-template-columns: repeat(2,1fr)
+  }
   .spesialiteter__cards {
     grid-template-columns: repeat(3,1fr)
   }
@@ -3426,11 +3548,26 @@ button.swiper-pagination-bullet {
   .behandlingerfor__row {
     grid-template-columns: repeat(2,1fr)
   }
-  .ommoss::before {
+  .omoss::before {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
-    background-position: center;
     background: url(../img/background_om.webp) top left/cover no-repeat
+  }
+  .team__items {
+    grid-column: 1/-1;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center
+  }
+  .team__item {
+    display: flex
+  }
+  .team__item::before {
+    display: none
+  }
+  .team__item:nth-child(1)::before,
+  .team__item:nth-child(2)::before,
+  .team__item:nth-child(3)::before {
+    display: block
   }
   .omsalongen__contant {
     grid-template-columns: 1fr
@@ -3472,6 +3609,15 @@ button.swiper-pagination-bullet {
 @media (max-width:59.43625em) {
   .vifremhever__block {
     grid-template-columns: repeat(1,1fr)
+  }
+}
+@media (max-width:58.62375em) {
+  .team__cards {
+    grid-template-columns: repeat(1,1fr)
+  }
+  .team__cards>* {
+    grid-column: 1/-1!important;
+    grid-row: auto!important
   }
 }
 @media (max-width:52.81125em) {
@@ -3678,6 +3824,9 @@ button.swiper-pagination-bullet {
   .tjenester__sub-title {
     max-width: 26.25rem
   }
+  .omoss__decorback {
+    text-align: center
+  }
   .hero__title {
     max-width: 26.25rem
   }
@@ -3695,6 +3844,20 @@ button.swiper-pagination-bullet {
 @media (max-width:34.74875em) {
   .tabs__navigation {
     grid-template-columns: repeat(2,1fr)
+  }
+}
+@media (max-width:34.37375em) {
+  .team__items {
+    grid-template-columns: repeat(2,1fr);
+    text-align: center
+  }
+}
+@media (max-width:34.37375rem) {
+  .team__item {
+    border-bottom: none
+  }
+  .team__item::before {
+    display: none!important
   }
 }
 @media (max-width:33.125em) {
@@ -4022,28 +4185,28 @@ button.swiper-pagination-bullet {
   .behandlingerfor__text-right {
     font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
   }
-  .ommoss {
+  .omoss {
     padding-top: clamp(7.8125rem ,7.2916666667rem + 2.6041666667vw ,9.375rem)
   }
-  .ommoss {
+  .omoss {
     padding-bottom: clamp(3.4375rem ,2.8125rem + 3.125vw ,5.3125rem)
   }
-  .ommoss {
+  .omoss {
     padding-bottom: clamp(1.875rem ,1.4583333333rem + 2.0833333333vw ,3.125rem)
   }
-  .ommoss__name {
+  .omoss__name {
     font-size: clamp(1.125rem ,1rem + .625vw ,1.5rem)
   }
-  .ommoss__name {
+  .omoss__name {
     margin-bottom: clamp(1.25rem ,1.0416666667rem + 1.0416666667vw ,1.875rem)
   }
-  .ommoss__title {
+  .omoss__title {
     font-size: clamp(1.25rem ,1.125rem + .625vw ,1.625rem)
   }
-  .ommoss__decor {
+  .omoss__decor {
     font-size: clamp(2.5rem ,2.1875rem + 1.5625vw ,3.4375rem)
   }
-  .ommoss__decorback {
+  .omoss__decorback {
     font-size: clamp(1.875rem ,1.5625rem + 1.5625vw ,2.8125rem)
   }
   .omoss__line {
@@ -4062,6 +4225,27 @@ button.swiper-pagination-bullet {
     padding-bottom: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
   }
   .omoss__dexcription {
+    font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
+  }
+  .team {
+    padding-top: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
+  }
+  .team {
+    padding-bottom: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
+  }
+  .team__title {
+    font-size: clamp(1.5rem ,1.375rem + .625vw ,1.875rem)
+  }
+  .team__text {
+    font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
+  }
+  .team__box {
+    font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
+  }
+  .team__icon {
+    font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
+  }
+  .team__name {
     font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
   }
   .hero {
