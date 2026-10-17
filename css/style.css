@@ -1442,6 +1442,44 @@ h6 {
   color: var(--text-inverse);
   line-height: 130%
 }
+.team {
+  background-color: var(--bg-secondary)
+}
+.team__cards {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.25rem
+}
+.team__card {
+  display: flex;
+  flex-direction: column;
+  gap: .9375rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center
+}
+.team__title {
+  color: var(--text-primary);
+  line-height: 130%
+}
+.team__sub-title {
+  color: var(--text-primary);
+  line-height: 130%
+}
+.team__img img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 500/180;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+.team__foto img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 500/320;
+  -o-object-fit: cover;
+  object-fit: cover
+}
 .hero {
   position: relative;
   overflow: hidden;
@@ -2750,6 +2788,18 @@ button.swiper-pagination-bullet {
   .omoss__dexcription {
     font-size: 1.125rem
   }
+  .team {
+    padding-top: 2.5rem
+  }
+  .team {
+    padding-bottom: 2.5rem
+  }
+  .team__title {
+    font-size: 2rem
+  }
+  .team__sub-title {
+    font-size: 1.125rem
+  }
   .hero {
     padding-top: 9.375rem
   }
@@ -3196,6 +3246,18 @@ button.swiper-pagination-bullet {
     padding-bottom: .9375rem
   }
   .omoss__dexcription {
+    font-size: 1rem
+  }
+  .team {
+    padding-top: 1.5625rem
+  }
+  .team {
+    padding-bottom: 1.5625rem
+  }
+  .team__title {
+    font-size: 1.625rem
+  }
+  .team__sub-title {
     font-size: 1rem
   }
   .hero {
@@ -3667,6 +3729,11 @@ button.swiper-pagination-bullet {
     grid-template-columns: repeat(1,1fr)
   }
 }
+@media (max-width:43.81125em) {
+  .team__cards {
+    grid-template-columns: repeat(1,1fr)
+  }
+}
 @media (max-width:38.75em) {
   .rullendetekstvisning__body::after,
   .rullendetekstvisning__body::before {
@@ -4064,6 +4131,18 @@ button.swiper-pagination-bullet {
     padding-bottom: clamp(.9375rem ,.8333333333rem + .5208333333vw ,1.25rem)
   }
   .omoss__dexcription {
+    font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
+  }
+  .team {
+    padding-top: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
+  }
+  .team {
+    padding-bottom: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
+  }
+  .team__title {
+    font-size: clamp(1.625rem ,1.5rem + .625vw ,2rem)
+  }
+  .team__sub-title {
     font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
   }
   .hero {
