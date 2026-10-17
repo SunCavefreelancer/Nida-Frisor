@@ -1480,6 +1480,61 @@ h6 {
   -o-object-fit: cover;
   object-fit: cover
 }
+.vi {
+  background-color: var(--bg-secondary)
+}
+.vi__cards {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: .625rem
+}
+.vi__card {
+  padding: .625rem;
+  border: .0625rem solid var(--text-secondary);
+  border-radius: .4375rem;
+  box-shadow: 0 .25rem 1.875rem rgba(0,0,0,.05);
+  display: flex;
+  flex-direction: column;
+  gap: .3125rem;
+  text-align: center
+}
+.vi__foto img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 235/335;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: .4375rem;
+  box-shadow: 0 .25rem 1.875rem rgba(0,0,0,.05)
+}
+.vi__name {
+  color: var(--text-primary);
+  line-height: 130%;
+  text-transform: capitalize
+}
+.vi__dexcription {
+  color: var(--text-accent);
+  line-height: 130%;
+  text-transform: uppercase;
+  letter-spacing: .125rem
+}
+.vi__text {
+  line-height: 130%
+}
+.vi__line {
+  width: 3.125rem;
+  height: .1875rem;
+  background-color: var(--text-accent);
+  border-radius: .1875rem;
+  margin: .1875rem
+}
+.vi__tex.webp img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 500/180;
+  -o-object-fit: cover;
+  object-fit: cover
+}
 .hero {
   position: relative;
   overflow: hidden;
@@ -2800,6 +2855,21 @@ button.swiper-pagination-bullet {
   .team__sub-title {
     font-size: 1.125rem
   }
+  .vi {
+    padding-top: 2.5rem
+  }
+  .vi {
+    padding-bottom: 2.5rem
+  }
+  .vi__name {
+    font-size: 1.25rem
+  }
+  .vi__dexcription {
+    font-size: 1rem
+  }
+  .vi__text {
+    font-size: 1rem
+  }
   .hero {
     padding-top: 9.375rem
   }
@@ -3260,6 +3330,21 @@ button.swiper-pagination-bullet {
   .team__sub-title {
     font-size: 1rem
   }
+  .vi {
+    padding-top: 1.5625rem
+  }
+  .vi {
+    padding-bottom: 1.5625rem
+  }
+  .vi__name {
+    font-size: 1.125rem
+  }
+  .vi__dexcription {
+    font-size: .875rem
+  }
+  .vi__text {
+    font-size: .875rem
+  }
   .hero {
     padding-top: 7.8125rem
   }
@@ -3493,6 +3578,9 @@ button.swiper-pagination-bullet {
     transform: scale(1.05);
     background: url(../img/background_om.webp) top left/cover no-repeat
   }
+  .vi__cards {
+    grid-template-columns: repeat(4,1fr)
+  }
   .omsalongen__contant {
     grid-template-columns: 1fr
   }
@@ -3615,6 +3703,9 @@ button.swiper-pagination-bullet {
     justify-content: center;
     align-items: center;
     text-align: center
+  }
+  .vi__cards {
+    grid-template-columns: repeat(3,1fr)
   }
   .spesialiteter__cards {
     grid-template-columns: repeat(2,1fr)
@@ -4144,6 +4235,21 @@ button.swiper-pagination-bullet {
   }
   .team__sub-title {
     font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
+  }
+  .vi {
+    padding-top: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
+  }
+  .vi {
+    padding-bottom: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
+  }
+  .vi__name {
+    font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
+  }
+  .vi__dexcription {
+    font-size: clamp(.875rem ,.8333333333rem + .2083333333vw ,1rem)
+  }
+  .vi__text {
+    font-size: clamp(.875rem ,.8333333333rem + .2083333333vw ,1rem)
   }
   .hero {
     padding-top: clamp(7.8125rem ,7.2916666667rem + 2.6041666667vw ,9.375rem)
