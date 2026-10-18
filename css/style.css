@@ -828,6 +828,88 @@ h6 {
 .icons-tiktok:hover {
   background-color: rgba(0,0,0,0)
 }
+.kontak {
+  background-color: var(--bg-secondary)
+}
+.kontak__title {
+  text-transform: uppercase;
+  font-family: Cormorant-500
+}
+.kontak__sub-title {
+  text-transform: uppercase
+}
+.kontak__box {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: .9375rem
+}
+.kontak__left {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: .9375rem
+}
+.kontak__img {
+  padding: .625rem;
+  border: .0625rem solid var(--text-secondary);
+  border-radius: .4375rem;
+  box-shadow: 0 .25rem 1.875rem rgba(0,0,0,.05);
+  transition: .5s
+}
+.kontak__img:hover {
+  border: .0625rem solid var(--bg-accent)
+}
+.kontak__img img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 210/375;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: .4375rem;
+  box-shadow: 0 .25rem 1.875rem rgba(0,0,0,.05)
+}
+.kontak__infofm {
+  display: flex;
+  flex-direction: column;
+  gap: .9375rem
+}
+.kontak__email,
+.kontak__geo,
+.kontak__tel,
+.kontak__work {
+  display: flex;
+  gap: 1.5625rem
+}
+.kontak__icon {
+  color: var(--text-accent);
+  padding: .625rem;
+  border: .0625rem solid var(--bg-accent);
+  background-color: var(--bg-primary);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  align-self: flex-start;
+  flex-shrink: 0;
+  box-shadow: 0 .25rem 1.875rem rgba(0,0,0,.05);
+  transition: .5s
+}
+.kontak__icon:hover {
+  background-color: rgba(0,0,0,0)
+}
+.kontak__description {
+  line-height: 135%;
+  align-self: center;
+  padding: .9375rem;
+  border-radius: .625rem;
+  border: .0625rem solid transparent;
+  box-shadow: 0 .25rem 1.875rem rgba(0,0,0,.05);
+  transition: .5s
+}
+.kontak__description:hover {
+  color: var(--text-accent);
+  border: .0625rem solid var(--bg-accent)
+}
 .kontakt {
   background-color: var(--bg-secondary)
 }
@@ -2660,6 +2742,30 @@ button.swiper-pagination-bullet {
   .footer__info-icon {
     margin-bottom: 1.25rem
   }
+  .kontak {
+    padding-top: 9.375rem
+  }
+  .kontak {
+    padding-bottom: 3.75rem
+  }
+  .kontak__title {
+    font-size: 2.1875rem
+  }
+  .kontak__title {
+    margin-bottom: 1.5625rem
+  }
+  .kontak__sub-title {
+    font-size: 1.25rem
+  }
+  .kontak__sub-title {
+    margin-bottom: 3.125rem
+  }
+  .kontak__icon {
+    font-size: 1.5rem
+  }
+  .kontak__description {
+    font-size: 1.125rem
+  }
   .kontakt {
     padding-top: 9.375rem
   }
@@ -3138,6 +3244,30 @@ button.swiper-pagination-bullet {
   .footer__info-icon {
     margin-bottom: .9375rem
   }
+  .kontak {
+    padding-top: 7.5rem
+  }
+  .kontak {
+    padding-bottom: 2.5rem
+  }
+  .kontak__title {
+    font-size: 1.5rem
+  }
+  .kontak__title {
+    margin-bottom: 1.25rem
+  }
+  .kontak__sub-title {
+    font-size: 1.125rem
+  }
+  .kontak__sub-title {
+    margin-bottom: 1.875rem
+  }
+  .kontak__icon {
+    font-size: 1.25rem
+  }
+  .kontak__description {
+    font-size: 1rem
+  }
   .kontakt {
     padding-top: 7.5rem
   }
@@ -3555,6 +3685,11 @@ button.swiper-pagination-bullet {
     font-size: 1rem
   }
 }
+@media (max-width:75.06125em) {
+  .kontak__box {
+    grid-template-columns: repeat(1,1fr)
+  }
+}
 @media (max-width:74.99875em) {
   .spesialiteter__cards {
     grid-template-columns: repeat(3,1fr)
@@ -3899,6 +4034,14 @@ button.swiper-pagination-bullet {
     grid-template-columns: repeat(2,1fr)
   }
 }
+@media (max-width:34.43625em) {
+  .kontak__box {
+    grid-template-columns: repeat(1,1fr)
+  }
+  .kontak__left {
+    grid-template-columns: repeat(1,1fr)
+  }
+}
 @media (max-width:33.125em) {
   .tjenester__title {
     text-shadow: .125rem .125rem .25rem rgba(0,0,0,.5)
@@ -4063,6 +4206,30 @@ button.swiper-pagination-bullet {
   }
   .footer__info-icon {
     margin-bottom: clamp(.9375rem ,.8333333333rem + .5208333333vw ,1.25rem)
+  }
+  .kontak {
+    padding-top: clamp(7.5rem ,6.875rem + 3.125vw ,9.375rem)
+  }
+  .kontak {
+    padding-bottom: clamp(2.5rem ,2.0833333333rem + 2.0833333333vw ,3.75rem)
+  }
+  .kontak__title {
+    font-size: clamp(1.5rem ,1.2708333333rem + 1.1458333333vw ,2.1875rem)
+  }
+  .kontak__title {
+    margin-bottom: clamp(1.25rem ,1.1458333333rem + .5208333333vw ,1.5625rem)
+  }
+  .kontak__sub-title {
+    font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
+  }
+  .kontak__sub-title {
+    margin-bottom: clamp(1.875rem ,1.4583333333rem + 2.0833333333vw ,3.125rem)
+  }
+  .kontak__icon {
+    font-size: clamp(1.25rem ,1.1666666667rem + .4166666667vw ,1.5rem)
+  }
+  .kontak__description {
+    font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
   }
   .kontakt {
     padding-top: clamp(7.5rem ,6.875rem + 3.125vw ,9.375rem)
