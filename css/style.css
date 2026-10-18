@@ -1341,6 +1341,123 @@ h6 {
     opacity: 1
   }
 }
+.team {
+  background-color: var(--bg-secondary)
+}
+.team__cards {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.25rem
+}
+.team__card {
+  display: flex;
+  flex-direction: column;
+  gap: .9375rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center
+}
+.team__title {
+  color: var(--text-primary);
+  line-height: 130%
+}
+.team__sub-title {
+  color: var(--text-primary);
+  line-height: 130%
+}
+.team__img img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 500/180;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+.team__foto img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 500/320;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+.faces {
+  background-color: var(--bg-secondary)
+}
+.faces__linehorizont {
+  margin: .9375rem auto;
+  height: .1875rem;
+  border-radius: .625rem;
+  background-color: var(--bg-accent);
+  margin-bottom: 1.875rem;
+  transition: .7s
+}
+.faces__linehorizont:hover {
+  background-color: var(--text-secondary)
+}
+.faces__cards {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: .625rem
+}
+.faces__card {
+  padding: .625rem;
+  border: .0625rem solid var(--text-secondary);
+  border-radius: .4375rem;
+  box-shadow: 0 .25rem 1.875rem rgba(0,0,0,.05);
+  display: flex;
+  flex-direction: column;
+  gap: .3125rem;
+  text-align: center;
+  transition: .7s
+}
+.faces__card:hover {
+  border: .0625rem solid var(--bg-accent);
+  background-color: var(--text-secondary)
+}
+.faces__img img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 235/315;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: .4375rem;
+  box-shadow: 0 .25rem 1.875rem rgba(0,0,0,.05);
+  border: .0625rem solid var(--text-secondary)
+}
+.faces__name {
+  color: var(--text-primary);
+  line-height: 130%;
+  text-transform: capitalize
+}
+.faces__title {
+  color: var(--text-accent);
+  line-height: 130%;
+  text-transform: uppercase;
+  letter-spacing: .125rem
+}
+.faces__description {
+  line-height: 130%;
+  flex-grow: 1
+}
+.faces__line {
+  width: 3.125rem;
+  height: .1875rem;
+  background-color: var(--text-accent);
+  border-radius: .1875rem;
+  margin: .1875rem
+}
+.faces__imgtext img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 500/180;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+._icon-hurt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem
+}
 .omoss {
   position: relative;
   z-index: -1
@@ -1441,101 +1558,6 @@ h6 {
 .omoss__dexcription {
   color: var(--text-inverse);
   line-height: 130%
-}
-.team {
-  background-color: var(--bg-secondary)
-}
-.team__cards {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 1.25rem
-}
-.team__card {
-  display: flex;
-  flex-direction: column;
-  gap: .9375rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center
-}
-.team__title {
-  color: var(--text-primary);
-  line-height: 130%
-}
-.team__sub-title {
-  color: var(--text-primary);
-  line-height: 130%
-}
-.team__img img {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 500/180;
-  -o-object-fit: cover;
-  object-fit: cover
-}
-.team__foto img {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 500/320;
-  -o-object-fit: cover;
-  object-fit: cover
-}
-.faces {
-  background-color: var(--bg-secondary)
-}
-.faces__cards {
-  display: grid;
-  grid-template-columns: repeat(6,1fr);
-  gap: .625rem
-}
-.faces__card {
-  padding: .625rem;
-  border: .0625rem solid var(--text-secondary);
-  border-radius: .4375rem;
-  box-shadow: 0 .25rem 1.875rem rgba(0,0,0,.05);
-  display: flex;
-  flex-direction: column;
-  gap: .3125rem;
-  text-align: center
-}
-.faces__img img {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 235/315;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: .4375rem;
-  box-shadow: 0 .25rem 1.875rem rgba(0,0,0,.05);
-  border: .0625rem solid var(--text-secondary)
-}
-.faces__name {
-  color: var(--text-primary);
-  line-height: 130%;
-  text-transform: capitalize
-}
-.faces__title {
-  color: var(--text-accent);
-  line-height: 130%;
-  text-transform: uppercase;
-  letter-spacing: .125rem
-}
-.faces__description {
-  line-height: 130%;
-  flex-grow: 1
-}
-.faces__line {
-  width: 3.125rem;
-  height: .1875rem;
-  background-color: var(--text-accent);
-  border-radius: .1875rem;
-  margin: .1875rem
-}
-.faces__imgtext img {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 500/180;
-  -o-object-fit: cover;
-  object-fit: cover
 }
 .hero {
   position: relative;
@@ -2803,11 +2825,41 @@ button.swiper-pagination-bullet {
   .behandlingerfor__text-right {
     font-size: 1.125rem
   }
-  .omoss {
+  .team {
     padding-top: 9.375rem
   }
+  .team {
+    padding-bottom: 1.25rem
+  }
+  .team__title {
+    font-size: 2rem
+  }
+  .team__sub-title {
+    font-size: 1.125rem
+  }
+  .faces {
+    padding-top: 1.25rem
+  }
+  .faces {
+    padding-bottom: 2.5rem
+  }
+  .faces__linehorizont {
+    width: 14.375rem
+  }
+  .faces__name {
+    font-size: 1.25rem
+  }
+  .faces__title {
+    font-size: .875rem
+  }
+  .faces__description {
+    font-size: 1rem
+  }
   .omoss {
-    padding-bottom: 2.1875rem
+    padding-top: 6.25rem
+  }
+  .omoss {
+    padding-bottom: 6.5625rem
   }
   .omoss {
     padding-bottom: 3.125rem
@@ -2844,33 +2896,6 @@ button.swiper-pagination-bullet {
   }
   .omoss__dexcription {
     font-size: 1.125rem
-  }
-  .team {
-    padding-top: 2.5rem
-  }
-  .team {
-    padding-bottom: 2.5rem
-  }
-  .team__title {
-    font-size: 2rem
-  }
-  .team__sub-title {
-    font-size: 1.125rem
-  }
-  .faces {
-    padding-top: 2.5rem
-  }
-  .faces {
-    padding-bottom: 2.5rem
-  }
-  .faces__name {
-    font-size: 1.25rem
-  }
-  .faces__title {
-    font-size: .875rem
-  }
-  .faces__description {
-    font-size: 1rem
   }
   .hero {
     padding-top: 9.375rem
@@ -3278,11 +3303,41 @@ button.swiper-pagination-bullet {
   .behandlingerfor__text-right {
     font-size: 1rem
   }
-  .omoss {
-    padding-top: 7.8125rem
+  .team {
+    padding-top: 6.25rem
+  }
+  .team {
+    padding-bottom: 1.5625rem
+  }
+  .team__title {
+    font-size: 1.625rem
+  }
+  .team__sub-title {
+    font-size: 1rem
+  }
+  .faces {
+    padding-top: 1.5625rem
+  }
+  .faces {
+    padding-bottom: 1.5625rem
+  }
+  .faces__linehorizont {
+    width: 10.625rem
+  }
+  .faces__name {
+    font-size: 1.125rem
+  }
+  .faces__title {
+    font-size: .875rem
+  }
+  .faces__description {
+    font-size: .875rem
   }
   .omoss {
-    padding-bottom: 1.25rem
+    padding-top: 2.5rem
+  }
+  .omoss {
+    padding-bottom: 1.875rem
   }
   .omoss {
     padding-bottom: 1.875rem
@@ -3319,33 +3374,6 @@ button.swiper-pagination-bullet {
   }
   .omoss__dexcription {
     font-size: 1rem
-  }
-  .team {
-    padding-top: 1.5625rem
-  }
-  .team {
-    padding-bottom: 1.5625rem
-  }
-  .team__title {
-    font-size: 1.625rem
-  }
-  .team__sub-title {
-    font-size: 1rem
-  }
-  .faces {
-    padding-top: 1.5625rem
-  }
-  .faces {
-    padding-bottom: 1.5625rem
-  }
-  .faces__name {
-    font-size: 1.125rem
-  }
-  .faces__title {
-    font-size: .875rem
-  }
-  .faces__description {
-    font-size: .875rem
   }
   .hero {
     padding-top: 7.8125rem
@@ -3580,13 +3608,13 @@ button.swiper-pagination-bullet {
   .behandlingerfor__row {
     grid-template-columns: repeat(2,1fr)
   }
+  .faces__cards {
+    grid-template-columns: repeat(4,1fr)
+  }
   .omoss::before {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     background: url(../img/background_om.webp) top left/cover no-repeat
-  }
-  .faces__cards {
-    grid-template-columns: repeat(4,1fr)
   }
   .omsalongen__contant {
     grid-template-columns: 1fr
@@ -4201,11 +4229,41 @@ button.swiper-pagination-bullet {
   .behandlingerfor__text-right {
     font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
   }
-  .omoss {
-    padding-top: clamp(7.8125rem ,7.2916666667rem + 2.6041666667vw ,9.375rem)
+  .team {
+    padding-top: clamp(6.25rem ,5.2083333333rem + 5.2083333333vw ,9.375rem)
+  }
+  .team {
+    padding-bottom: clamp(1.25rem ,1.6666666667rem + -.5208333333vw ,1.5625rem)
+  }
+  .team__title {
+    font-size: clamp(1.625rem ,1.5rem + .625vw ,2rem)
+  }
+  .team__sub-title {
+    font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
+  }
+  .faces {
+    padding-top: clamp(1.25rem ,1.6666666667rem + -.5208333333vw ,1.5625rem)
+  }
+  .faces {
+    padding-bottom: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
+  }
+  .faces__linehorizont {
+    width: clamp(10.625rem ,9.375rem + 6.25vw ,14.375rem)
+  }
+  .faces__name {
+    font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
+  }
+  .faces__title {
+    font-size: clamp(.875rem ,.875rem + 0 ,.875rem)
+  }
+  .faces__description {
+    font-size: clamp(.875rem ,.8333333333rem + .2083333333vw ,1rem)
   }
   .omoss {
-    padding-bottom: clamp(1.25rem ,.9375rem + 1.5625vw ,2.1875rem)
+    padding-top: clamp(2.5rem ,1.25rem + 6.25vw ,6.25rem)
+  }
+  .omoss {
+    padding-bottom: clamp(1.875rem ,.3125rem + 7.8125vw ,6.5625rem)
   }
   .omoss {
     padding-bottom: clamp(1.875rem ,1.4583333333rem + 2.0833333333vw ,3.125rem)
@@ -4242,33 +4300,6 @@ button.swiper-pagination-bullet {
   }
   .omoss__dexcription {
     font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
-  }
-  .team {
-    padding-top: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
-  }
-  .team {
-    padding-bottom: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
-  }
-  .team__title {
-    font-size: clamp(1.625rem ,1.5rem + .625vw ,2rem)
-  }
-  .team__sub-title {
-    font-size: clamp(1rem ,.9583333333rem + .2083333333vw ,1.125rem)
-  }
-  .faces {
-    padding-top: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
-  }
-  .faces {
-    padding-bottom: clamp(1.5625rem ,1.25rem + 1.5625vw ,2.5rem)
-  }
-  .faces__name {
-    font-size: clamp(1.125rem ,1.0833333333rem + .2083333333vw ,1.25rem)
-  }
-  .faces__title {
-    font-size: clamp(.875rem ,.875rem + 0 ,.875rem)
-  }
-  .faces__description {
-    font-size: clamp(.875rem ,.8333333333rem + .2083333333vw ,1rem)
   }
   .hero {
     padding-top: clamp(7.8125rem ,7.2916666667rem + 2.6041666667vw ,9.375rem)
