@@ -836,7 +836,8 @@ h6 {
   font-family: Cormorant-500
 }
 .kontak__sub-title {
-  text-transform: uppercase
+  text-transform: uppercase;
+  line-height: 135%
 }
 .kontak__box {
   display: grid;
@@ -909,6 +910,25 @@ h6 {
 .kontak__description:hover {
   color: var(--text-accent);
   border: .0625rem solid var(--bg-accent)
+}
+.kontak__foto {
+  padding: .625rem;
+  border: .0625rem solid var(--text-secondary);
+  border-radius: .4375rem;
+  box-shadow: 0 .25rem 1.875rem rgba(0,0,0,.05);
+  transition: .7s
+}
+.kontak__foto:hover {
+  border: .0625rem solid var(--bg-accent)
+}
+.kontak__foto img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 500/395;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: .4375rem;
+  box-shadow: 0 .25rem 1.875rem rgba(0,0,0,.05)
 }
 .kontakt {
   background-color: var(--bg-secondary)
